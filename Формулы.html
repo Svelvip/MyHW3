@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- Необходимые Мета-теги всегда на первом месте -->  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Сайт на Bootstrap</title>
+    <!-- Последняя компиляция и сжатый CSS -->  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css bootstrap.css">
+	</head>
+
+	<body><!--шапка-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+			<a class="navbar-brand" href="Главная.html"><img src="../усы.png"> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="Главная.html">Главная <span class="sr-only"></span></a>
+					</li>
+					<li class="nav-item dropdown drophover active">
+						<a class="nav-link dropdown-toggle" href="#" role="button">Меню</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="SVG.html">SVG</a>
+							<a class="dropdown-item" href="Формулы.html">Формулы</a>
+							<div class="dropdown-divider"></div>
+							<div class="btn-group dropright drophover">
+								<a class="dropdown-toggle dropdown-item" data-toggle="dropdown" >
+									Второй уровень списка
+								</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Текст</a>
+									<a class="dropdown-item" href="#">Снова текст</a>
+									<a class="dropdown-item" href="#">И снова текст</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav><!--конец шапки-->
+						<!--крошки-->
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+		    	
+		    		<li class="breadcrumb-item">
+		    			<a href="Главная.html" btn btn-default"  data-toggle="tooltip" data-placement="bottom" title="Главнaя">
+		    				<i class="fas fa-home"></i>
+		    			</a>
+		    		</li>
+		    
+		    		<li class="breadcrumb-item active" aria-current="page">Формулы</li>
+		    </ol>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2>Отображение формул с помощью MathML</h2>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Название</th>
+									<th scope="col">Формула</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Интегралы</td>
+									<td>
+										<math>
+											<munderover>
+												<mo>&int;</mo>
+												<mn>0</mn>
+												<mn>1</mn>
+											</munderover>
+											<mi>f</mi>
+											<mrow>
+												<mfenced>
+												<mi>x</mi>
+												</mfenced>
+											</mrow>
+											<mtext>&VeryThinSpace; </mtext>
+											<mo>&dd;</mo>
+											<mi>x</mi>
+										</math>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Суммы</td>
+									<td>
+										<math>
+
+											<mstyle displaystyle=’true’> 
+												<munderover>
+													<mo>&sum;</mo>
+													<mrow>
+														<mi>i</mi>
+														<mo>=</mo>
+														<mn>0</mn>
+													</mrow>
+													<mi>&infin;</mi>
+												</munderover>
+												<msub>
+													<mi>x</mi>
+													<mi>i</mi>
+												</msub>
+											</mstyle>
+										</math>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Дроби</td>
+									<td>
+										<math>
+											<mfrac>
+												<mn>5</mn>
+												<mn>4</mn>
+											</mfrac>
+											<mo>=</mo>
+											<mfrac>
+												<msqrt>
+													<mn>25</mn>
+												</msqrt>
+												<mn>4</mn>
+											</mfrac>
+										</math>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Корень</td>
+									<td>
+										<math>
+											<mroot>
+												<mrow>
+													<mi>b</mi>
+													<mo>+</mo>
+													<mi>c</mi>
+												</mrow>
+												<mn>3</mn>
+											</mroot>
+										</math>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">5</th>
+									<td>Предел</td>
+									<td>
+										<math>
+											<munder>
+												<mi>lim</mi>
+												<mrow>
+													<mi>x</mi>
+													<mo>&#x2192;</mo>
+													<mo>&#x221E;</mo>
+												</mrow>
+											</munder>
+											<mo>(</mo>
+											<mn>1</mn>
+											<mo>+</mo>
+											<mfrac>
+												<mn>1</mn>
+												<mi>x</mi>
+											</mfrac>
+											<msup>
+												<mo>)</mo>
+												<mi>x</mi>
+											</msup>
+											<mo>=</mo>
+											<mi>e</mi>
+										</math>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+			</div>
+		</div>
+		<!--футер-->
+		<div class="copyright">
+			<div class="container">
+				<p>&copy Все права защищены бабушкой, сидящей у подъезда.</p>
+			</div>
+		</div>
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	    <script>
+	    	$(function () {
+	  			$('[data-toggle="tooltip"]').tooltip()
+			})
+    	</script>
+    	<script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML">	
+		</script>
+  	</body>
+</html>

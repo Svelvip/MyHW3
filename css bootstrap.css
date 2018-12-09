@@ -1,0 +1,34 @@
+.drophover:hover > .dropdown-menu{ 
+display: block; 
+margin: 0; 
+}
+
+h1{
+	text-align: center;
+}
+
+.container{
+	margin-bottom: 30px; 
+}
+
+
+
+.f{
+	background: #ebebeb;
+	margin-bottom: 10px;
+}
+
+.copyright{
+	background: #252738;
+	color:#fff;
+	text-align: center;
+}
+
+p{
+	padding: 10px;
+}
+
+svg{
+	width: 100%;
+	height: 500px;
+}
